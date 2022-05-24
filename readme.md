@@ -4,7 +4,7 @@
 
 ## Для пользователей
 
-Вам не сюда, вы ошиблись местом, наверное вы искали [это](https://github.com/LogicWorlds/LogicProxyInstaller/tree/main/win)
+Вам не сюда, вы ошиблись местом, наверное вы искали [это](https://github.com/LogicWorlds/LogicProxyInstaller/tree/main/).
 
 ## Для собственного хостинга скриптов(Pro LVL)
 
