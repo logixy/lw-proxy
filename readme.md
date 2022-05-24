@@ -4,7 +4,7 @@
 
 ## Для пользователей
 
-Вам не сюда, вы ошиблись местом, наверное вы искали [это](https://github.com/LogicWorlds/LogicProxyInstaller/tree/main/).
+Вам не сюда, вы ошиблись местом, наверное вы искали [это](https://github.com/LogicWorlds/LogicProxyInstaller/).
 
 ## Для собственного хостинга скриптов(Pro LVL)
 
@@ -35,4 +35,4 @@ sudo chmod +x start.sh delete.sh reload.sh
 ```
 
 А дальше уже на стороне клиента прописываем в hosts адресс сервера.  
-Или модифицируем скрипы в папке client-script на адресс вашего сервера.
+Или модифицируем [скрипты](https://github.com/LogicWorlds/LogicProxyInstaller/) на адресс вашего сервера.
