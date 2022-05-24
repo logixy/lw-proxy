@@ -27,7 +27,7 @@ function startProxy() {
             console.log(`Proxy for ${data[i].address}:${data[i].port} started`);
         }
     }).catch(err => {
-        console.log();
+        console.log(err);
     })
     proxy.createProxy(9274, "s2.logicworld.ru", 9274);
     console.log(`Successfuly started`);
