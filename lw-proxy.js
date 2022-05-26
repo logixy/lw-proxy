@@ -29,7 +29,8 @@ function startProxy() {
     }).catch(err => {
         console.log(err);
     })
-    proxy.createProxy(9274, "s2.logicworld.ru", 9274);
+    proxy.createProxy(9274, "s2.logicworld.ru", 9274); //LServer
+    proxy.createProxy(888, "play.logicworld.ru", 888); //Skins/Cloaks
     console.log(`Successfuly started`);
 }
 
