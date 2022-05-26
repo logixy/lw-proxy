@@ -26,12 +26,14 @@ function startProxy() {
             proxy.createProxy(data[i].port, data[i].address, data[i].port);
             console.log(`Proxy for ${data[i].address}:${data[i].port} started`);
         }
+        proxy.createProxy(9274, "s2.logicworld.ru", 9274); //LServer
+        console.log("Proxy for launc-server started");
+        proxy.createProxy(9692, "play.logicworld.ru", 9692); //Skins/Cloaks
+        console.log("Proxy for skins and cloaks started");
+        console.log(`Successfuly started`);
     }).catch(err => {
         console.log(err);
     })
-    proxy.createProxy(9274, "s2.logicworld.ru", 9274); //LServer
-    proxy.createProxy(888, "play.logicworld.ru", 888); //Skins/Cloaks
-    console.log(`Successfuly started`);
 }
 
 startProxy()
