@@ -18,20 +18,20 @@ sudo chmod +x start.sh delete.sh reload.sh
 
 Для запуска выполняем:
 
-```sh
-./start.sh
+```bash
+sh start.sh
 ```
 
 Для отключения:
 
-```sh
-./delete.sh
+```bash
+sh delete.sh
 ```
 
 Перезагрузка:
 
-```sh
-./reload.sh
+```bash
+sh reload.sh
 ```
 
 А дальше уже на стороне клиента прописываем в hosts адресс сервера.  
