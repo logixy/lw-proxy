@@ -1,6 +1,5 @@
 var proxy = require("node-tcp-proxy");
 const axios = require('axios');
-const { log } = require("console");
 
 async function loadServerList() {
     let srvList = new Array;
@@ -30,6 +29,8 @@ function startProxy() {
         console.log("Proxy for launc-server started");
         proxy.createProxy(9692, "play.logicworld.ru", 9692); //Skins/Cloaks
         console.log("Proxy for skins and cloaks started");
+        proxy.createProxy(9692, "play.logicworld.ru", 8000); //???
+        console.log("Proxy for ??? started");
         console.log(`Successfuly started`);
     }).catch(err => {
         console.log(err);
