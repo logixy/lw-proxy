@@ -8,6 +8,7 @@ const proxyList = []
 async function loadServerList() {
     let srvList = new Array;
     await axios.get(`https://${domain}/monAJAX/ajax.php`).then(res => {
+
         let data = res.data.servers
         let sortData = Object.values(data);
         for (let i = 0; i < sortData.length; i++) {
@@ -32,6 +33,7 @@ function startProxy() {
         proxyList.push(proxy.createProxy(9692, `play.${domain}`, 9692)); //Skins/Cloaks
         console.log("Proxy for skins and cloaks started");
         proxyList.push(proxy.createProxy(8000, `play.${domain}`, 8000)); //RRRRRRRRADIO!
+
         console.log("Proxy for RRRRRRRRADIO started");
         console.log(`Successfuly started`);
     }).catch(err => {
